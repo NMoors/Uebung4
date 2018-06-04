@@ -3,35 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <link href="Uebung4.css" type="text/css" rel="stylesheet">
-        <script src="formular.js"></script>
+        <script src="Uebung4.js"></script>
         <title>Formular</title>
     </head>
     <body>
-        <form action="formmailer.php" method="post">
-            <label>Name 
-               <input type="text" name="Name" id="name" value="" placeholder="Name" /><br><br>
-            </label>
-            <label>Vorname 
-                    <input type="text" name="vorname" id="vorname" value="" placeholder="Vorname" /><br><br>
-            </label>
-            <label>Geburtstag
-                    <input type="text" name="Geburtstag" id="Geburtstag" value="" placeholder="Geburtstag" /><br><br>
-            </label>
-            <label>Wohnort
-                    <input type="text" name="Wohnort" id="Wohnort" value="" placeholder="Wohnort" /><br><br>
-            </label>
-            <label>Postleitzahl
-                    <input type="text" name="Postleitzahl" id="Postleitzahl" value="" placeholder="Postleitzahl" /><br><br>
-            </label>
-            <label>Strasse
-                    <input type="text" name="Strasse" id="Strasse" value="" placeholder="Strasse" /><br><br>
-            </label>
-            <label>Hausnummer
-                    <input type="text" name="Hausnummer" id ="Hausnummer" value="" placeholder="Hausnummer" /><br><br>
-            </label>
-            <label>E-Mail Adresse
-                    <input type="text" name="E-Mail" id="E-Mail" value="" placeholder="E-Mail" /><br><br>
-            </label>
+        <form>
+            Name                  <input type="text" name="Name" id="name" value="test" placeholder="Name" />
+            Vorname               <input type="text"  id="vorname" value="fisch" placeholder="Vorname" required >
+            Geburtstag            <input type="text"  id="Geburtstag" value="17.12.93" placeholder="Geburtstag" required>
+            Wohnort               <input type="text"  id="Wohnort" value="fulda" placeholder="Wohnort" required>
+            Postleitzahl          <input type="number" id="Postleitzahl" value="36037" placeholder="Postleitzahl" required>
+            Strasse               <input type="text" id="Strasse" value="testsraße" placeholder="Strasse" required>
+            Hausnummer            <input type="number" id ="Hausnummer" value="5" placeholder="Hausnummer" required>
+            E-Mail Adresse        <input type="text" id="E-Mail" value="123schrödi@web.de" placeholder="E-Mail"required>
+           
          </form>
     </body>
 </html>
