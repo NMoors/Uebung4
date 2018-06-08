@@ -6,6 +6,8 @@ label {
     clear: both;
     line-height: 2em;
     margin-right: 1em;
+    content: "\n";
+    white-space: pre;
 }
 label::after { 
     content:": ";}

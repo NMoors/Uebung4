@@ -1,7 +1,7 @@
 function onSubmit (){
     console.log("2");
 
-if(testeHausnummer()&& testePostleitzahl()) document.getElementById("Err").innerHTML = "";
+if(testeHausnummer()&& testePostleitzahl() ) document.getElementById("Err").innerHTML = "";
 gibLebensdauer();
 }
 
@@ -18,7 +18,7 @@ function testePostleitzahl(){
     var res = regex.test(e.value);
     console.log(res);
 
-    if(res == false) document.getElementById("err").innerHTML = "Postleitzahl stimmt nicht";
+    if(res == false) document.getElementById("Err").innerHTML = "Postleitzahl stimmt nicht";
     else document.getElementById("Err").innerHTML = "";
     return res;
 }
@@ -27,10 +27,17 @@ function testeHausnummer(){
     var e=document.getElementById("Hausnummer");
     var regex= /^[0-9]{1,3}[a-zA-Z]{0,1}\b/g
     var res = regex.test(e.value);
-    if(res == false) document.getElementById("err").innerHTML = "Hausnummer stimmt nicht";
+    if(res == false) document.getElementById("Err").innerHTML = "Hausnummer stimmt nicht";
     else document.getElementById("Err").innerHTML = "";
     return res;
 }
+
+// function testeGeburstag(){
+//     var e=document.getElementById("Geburtstag");
+//     var today = new Date();
+//     if (e.value == today)  document.getElementById("Err").innerHTML = "Geburtstag stimmt nicht";
+//     else document.getElementById("Err").innerHTML = "";
+// }
 
 function gibLebensdauer(){
     var e = document.getElementById("Geburtstag");
