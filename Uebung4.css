@@ -1,13 +1,13 @@
 form{
-    float: right;   
-}
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    }
 
-label {
-    clear: both;
-    line-height: 2em;
-    margin-right: 1em;
-    content: "\n";
-    white-space: pre;
+input{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    right: 5%;
 }
-label::after { 
-    content:": ";}

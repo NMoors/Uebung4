@@ -32,6 +32,15 @@ function testeHausnummer(){
     return res;
 }
 
+function testeEmail(){
+    var e=document.getElementById("E-Mail");
+    var regex= /^[a-zA-Z]{3,20}@[a-z]{3-9}.[a-z]{2,3}\b/g
+    var res = regex.test(e.value);
+    if(res == false) document.getElementById("Err").innerHTML = "E-Mail stimmt nicht";
+    else document.getElementById("Err").innerHTML = "";
+    return res;
+}
+
 // function testeGeburstag(){
 //     var e=document.getElementById("Geburtstag");
 //     var today = new Date();
