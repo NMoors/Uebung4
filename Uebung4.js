@@ -1,7 +1,7 @@
 function onSubmit (){
     console.log("2");
 
-if(testeHausnummer()&& testePostleitzahl() ) document.getElementById("Err").innerHTML = "";
+if(testeHausnummer()&& testePostleitzahl() && testeEmail()) document.getElementById("Err").innerHTML = "";
 gibLebensdauer();
 }
 
